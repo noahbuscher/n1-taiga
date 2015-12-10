@@ -1,0 +1,39 @@
+@import "variables";
+
+.account-sidebar-sections {
+  background-color: @white !important;
+
+  section {
+    .item-container {
+      margin: 0 10px !important;
+
+      .disclosure-triangle {
+        display: none;
+      }
+
+      .item {
+        padding: 0 10px !important;
+        color: @taiga-light !important;
+        cursor: pointer !important;
+
+
+        &.selected {
+          background: @taiga-accent !important;
+          border-radius: 4px;
+          color: @white !important;
+
+          .item-count-box {
+            color: white !important;
+            box-shadow: 0 0.5px 0 white, 0 -0.5px 0 white, 0.5px 0 0 white, -0.5px 0 0 white !important;
+          }
+
+          .icon {
+            img {
+              background: @white !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}
