@@ -22,4 +22,5 @@ Taiga is a clean, simple theme for N1 that allows you to focus on what matters m
       "N1-Taiga"
     ]
 ```
-4. Profit! :money_with_wings:
+
+Profit! :money_with_wings:
