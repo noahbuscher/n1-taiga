@@ -3,6 +3,14 @@
 .thread-list {
   .list-container {
     .list-item {
+      &.focused:hover .list-column-HoverActions .inner {
+        color: @taiga-dark !important;
+        background-image: linear-gradient(90deg, fadeout(@taiga-lighter, 100%) 0%, darken(@taiga-lighter, 10%) 100%);
+
+        .action {
+          -webkit-filter: none;
+        }
+      }
       .list-column {
         border-bottom: 0 !important;
       }
