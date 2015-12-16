@@ -1,7 +1,7 @@
 {
   "name": "N1-Taiga",
   "theme": "Taiga",
-  "version": "0.1.2",
+  "version": "0.1.4",
   "description": "Taiga N1 Client Theme",
   "license": "GPL-3.0",
   "engines": {
