@@ -1,12 +1,12 @@
 {
   "name": "N1-Taiga",
   "theme": "Taiga",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "description": "Taiga N1 Client Theme",
   "license": "GPL-3.0",
   "engines": {
     "nylas": "*"
   },
-  "styleSheets": ["controls", "email-frame", "sidebar", "threads"],
+  "styleSheets": ["controls", "email-frame", "sidebar", "threads", "notifications"],
   "private": true
 }

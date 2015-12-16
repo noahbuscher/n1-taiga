@@ -1,10 +1,13 @@
 @import "variables";
 
-.btn-toolbar {
+/**
+ * Buttons
+ */
+.btn-toolbar, .token, .actions>.btn, .new-package>.btn {
   box-shadow: none !important;
   background: @white !important;
   border: 1px solid @taiga-light !important;
-  border-radius: 4px !important;
+  border-radius: @base-border-radius !important;
   cursor: pointer !important;
 }
 
@@ -14,8 +17,9 @@
     box-shadow: none !important;
     background: @white !important;
     border: 1px solid @taiga-light !important;
-    border-top-left-radius: 4px !important;
-    border-bottom-left-radius: 4px !important;
+    border-top-left-radius: @base-border-radius !important;
+    border-bottom-left-radius: @base-border-radius !important;
+    padding-top: 5px;
   }
 
   .secondary-picker {
@@ -23,8 +27,49 @@
     box-shadow: none !important;
     background: @white !important;
     border: 1px solid @taiga-light !important;
-    border-top-right-radius: 4px !important;
-    border-bottom-right-radius: 4px !important;
+    border-top-right-radius: @base-border-radius !important;
+    border-bottom-right-radius: @base-border-radius !important;
     margin-left: -1px !important;
   }
+
+  .secondary-items {
+    .item  {
+      cursor: pointer;
+      color: @taiga-light !important;
+      background: @white !important;
+
+      .button-dropdown {
+        img {
+          background: @taiga-light  !important;
+        }
+      }
+    }
+  }
+}
+
+.btn-feedback {
+  background: @taiga-accent !important;
+  border: none !important;
+}
+
+/**
+ * Dropdown
+ */
+.menu {
+  .item.selected {
+    background: @taiga-light !important;
+    .primary {
+      color: @white !important;
+    }
+    .secondary {
+      color: @taiga-lighter !important;
+    }
+  }
+}
+
+/**
+ * Plugin page
+ */
+.package {
+  border-radius: @base-border-radius;
 }
