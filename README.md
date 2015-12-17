@@ -6,21 +6,11 @@ Taiga is a clean, simple, Mailbox-inspired theme for N1 that allows you to focus
 
 ## Installing
 
-1. [Download](https://github.com/noahbuscher/N1-Taiga/releases) the latest release of Taiga
-2. Copy it to `~/.nylas/packages`
-3. Open `~/.nylas/config.cson`, and add/edit `core.themes` to include your theme; it should look like this:
-```
-"*":
-  env: "staging"
-  nylas:
-    accounts: [
-       ...
-    ]
-  core:
-    themes: [
-      "ui-light"
-      "N1-Taiga"
-    ]
-```
+1. [Download](https://nylas.com/n1) Nylas N1 email client if you have not yet
+2. [Grab](https://github.com/noahbuscher/N1-Taiga/releases) the latest release of Taiga
+3. Copy it to `~/.nylas/packages`
+4. Open `N1>Prefrences>General` and select `N1-Taiga` as the theme from the dropdown
+
+![](http://noah.li/12JwD+)
 
 Profit! :money_with_wings:
