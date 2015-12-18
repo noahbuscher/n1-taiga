@@ -1,8 +1,8 @@
 {
   "name": "N1-Taiga",
   "theme": "Taiga",
-  "version": "0.2.0",
-  "description": "Taiga N1 Client Theme",
+  "version": "0.2.2",
+  "description": "A clean, Mailbox-inspired theme for Nylas N1",
   "license": "GPL-3.0",
   "engines": {
     "nylas": "*"
