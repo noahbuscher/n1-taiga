@@ -52,10 +52,17 @@
   border: none !important;
 }
 
+.content-container {
+  .item.selected {
+    background: @taiga-light !important;
+    color: @white !important;
+  }
+}
+
 /**
  * Dropdown
  */
-.menu {
+.menu, .content-container {
   .item.selected {
     background: @taiga-light !important;
     .primary {
