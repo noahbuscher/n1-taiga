@@ -3,7 +3,7 @@
 /**
  * Buttons
  */
-.btn-toolbar, .token, .actions>.btn, .new-package>.btn {
+.btn-toolbar, .token, .actions>.btn, .new-package>.btn, .appearance-mode-switch>.btn {
   box-shadow: none !important;
   background: @white !important;
   border: 1px solid @taiga-light !important;
@@ -47,11 +47,17 @@
   }
 }
 
+/**
+ * Feedback button
+ */
 .btn-feedback {
   background: @taiga-accent !important;
   border: none !important;
 }
 
+/**
+ * Search bar
+ */
 .content-container {
   .item.selected {
     background: @taiga-light !important;
@@ -62,7 +68,7 @@
 /**
  * Dropdown
  */
-.menu, .content-container {
+.menu {
   .item.selected {
     background: @taiga-light !important;
     .primary {
@@ -79,4 +85,15 @@
  */
 .package {
   border-radius: @base-border-radius;
+}
+
+/**
+ * Prefs page
+ */
+.appearance-mode {
+  cursor: pointer;
+
+  &.active {
+    background-color: lighten(@taiga-light, 30%) !important;
+  }
 }
