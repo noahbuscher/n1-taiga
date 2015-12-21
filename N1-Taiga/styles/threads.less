@@ -28,6 +28,15 @@
               color: @taiga-dark !important;
               background-color: darken(@taiga-lighter, 5%) !important;
             }
+            &.selected {
+              color: @taiga-dark !important;
+              background-color: darken(@taiga-lighter, 5%) !important;
+            }
+            &.keyboard-cursor {
+              .list-column-Item {
+                border-left: 4px solid darken(@taiga-lighter, 50%) !important;
+              }
+            }
           }
         }
       }
