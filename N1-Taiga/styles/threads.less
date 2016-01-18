@@ -10,6 +10,21 @@
         .action {
           -webkit-filter: none;
         }
+        .thread-icon {
+          &:not(.thread-icon-star) {
+            opacity: 0.7;
+          }
+        }
+      }
+      &.focused {
+        .thread-icon, .mail-important-icon {
+          -webkit-filter: none;
+        }
+      }
+      &:hover {
+        .thread-icon {
+          visibility: inherit;
+        }
       }
       .list-column {
         border-bottom: 0 !important;
@@ -40,6 +55,13 @@
           }
         }
       }
+    }
+  }
+  .thread-icon {
+    background-image: url(../static/images/thread-list/icon-star-hover-@2x.png);
+
+    &:not(.thread-icon-star) {
+      visibility: hidden;
     }
   }
 }
