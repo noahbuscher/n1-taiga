@@ -1,6 +1,8 @@
-# Taiga
+# Taiga Solarized Dark
 
-Taiga is a clean, simple, Mailbox-inspired theme for N1 that allows you to focus on what matters most: your emails.
+Taiga Solarized is variant of Taiga by [Noah Buscher](https://github.com/noahbuscher/N1-Taiga) with the color scheme of [Solarized Dark](http://ethanschoonover.com/solarized) by Ethan Schoonover.
+
+Like Taiga, this theme is a clean, simple, Mailbox-inspired theme for N1 that allows you to focus on what matters most: your emails.
 
 ![](./preview.jpg)
 
