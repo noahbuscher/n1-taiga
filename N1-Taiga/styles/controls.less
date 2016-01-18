@@ -11,6 +11,24 @@
   cursor: pointer !important;
 }
 
+body.platform-win32 {
+  .sheet-toolbar-container {
+    .btn-toolbar {
+      border: 0 !important;
+    }
+  }
+}
+
+.btn.btn-emphasis {
+  background-color: @taiga-accent !important;
+  border-color: @taiga-accent !important;
+  color: @white !important;
+
+  img.content-mask {
+    background-color: @white !important;
+  }
+}
+
 .button-dropdown.bordered {
   .primary-item {
     cursor: pointer !important;
