@@ -1,10 +1,21 @@
 @import "variables";
+@import "ui-variables";
+
+//.ignore-in-parent-frame {
+// body {
+//    color: @white;
+//  }
+//  img {
+//    color: @white;
+//  }
+//}
 
 .ignore-in-parent-frame {
   body {
-    color: @taiga-dark;
+    -webkit-filter: invert() hue-rotate(180deg);
+    color: @background-tertiary;
   }
   img {
-    color: @taiga-dark;
+    -webkit-filter: invert() hue-rotate(180deg);
   }
 }

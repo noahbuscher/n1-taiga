@@ -1,11 +1,12 @@
 @import "variables";
+@import "ui-variables";
 
 .thread-list {
   .list-container {
     .list-item {
       &.focused:hover .list-column-HoverActions .inner {
-        color: @taiga-dark !important;
-        background-image: linear-gradient(90deg, fadeout(@taiga-lighter, 100%) 0%, darken(@taiga-lighter, 10%) 100%);
+        color: @background-primary !important;
+        background-color: @background-tertiary;
 
         .action {
           -webkit-filter: none;
@@ -22,19 +23,19 @@
             cursor: pointer !important;
             box-sizing: border-box;
             border: 0 !important;
-            background-color: @white !important;
-            color: @taiga-dark !important;
+            background-color: @background-secondary !important;
+            color: @base00 !important;
             &.focused {
-              color: @taiga-dark !important;
-              background-color: darken(@taiga-lighter, 5%) !important;
+              color: @white !important;
+              background-color: @background-tertiary !important;
             }
             &.selected {
-              color: @taiga-dark !important;
-              background-color: darken(@taiga-lighter, 5%) !important;
+              color: @white !important;
+              background-color: @background-tertiary !important;
             }
             &.keyboard-cursor {
               .list-column-Item {
-                border-left: 4px solid darken(@taiga-lighter, 50%) !important;
+                border-left: 4px solid darken(@base0, 50%) !important;
               }
             }
           }

@@ -1,6 +1,6 @@
 {
-  "name": "N1-Taiga",
-  "theme": "Taiga",
+  "name": "N1-Taiga-Solarized-Dark",
+  "theme": "Taiga Solarized Dark",
   "version": "0.2.4",
   "description": "A clean, Mailbox-inspired theme for Nylas N1",
   "license": "GPL-3.0",

@@ -1,12 +1,13 @@
 @import "variables";
+@import "ui-variables";
 
 /**
  * Buttons
  */
 .btn-toolbar, .token, .actions>.btn, .new-package>.btn, .appearance-mode-switch>.btn {
   box-shadow: none !important;
-  background: @white !important;
-  border: 1px solid @taiga-light !important;
+  background: @background-secondary !important;
+  border: 1px solid @background-tertiary !important;
   border-radius: @base-border-radius !important;
   cursor: pointer !important;
 }
@@ -20,12 +21,12 @@ body.platform-win32 {
 }
 
 .btn.btn-emphasis {
-  background-color: @taiga-accent !important;
+  background-color: @background-tertiary !important;
   border-color: @taiga-accent !important;
-  color: @white !important;
+  color: @background-primary !important;
 
   img.content-mask {
-    background-color: @white !important;
+    background-color: @background-primary !important;
   }
 }
 
@@ -33,34 +34,53 @@ body.platform-win32 {
   .primary-item {
     cursor: pointer !important;
     box-shadow: none !important;
-    background: @white !important;
-    border: 1px solid @taiga-light !important;
+    background: @background-primary !important;
+    border: 1px solid @background-tertiary !important;
     border-top-left-radius: @base-border-radius !important;
     border-bottom-left-radius: @base-border-radius !important;
     padding-top: 5px;
+  }
+  .primary-item:hover{
+      background: @background-tertiary !important;
+      color: @background-secondary !important;
+      img.content-mask {
+          background-color: @background-secondary !important;
+      }
   }
 
   .secondary-picker {
     cursor: pointer !important;
     box-shadow: none !important;
-    background: @white !important;
-    border: 1px solid @taiga-light !important;
+    background: @background-primary !important;
+    border: 1px solid @background-tertiary !important;
     border-top-right-radius: @base-border-radius !important;
     border-bottom-right-radius: @base-border-radius !important;
     margin-left: -1px !important;
+  }
+  .secondary-picker:hover {
+      background: @background-tertiary !important;
+      img.content-mask {
+          background-color: @background-secondary !important;
+      }
   }
 
   .secondary-items {
     .item  {
       cursor: pointer;
       color: @taiga-light !important;
-      background: @white !important;
-
+      background: @base02 !important;
       .button-dropdown {
         img {
-          background: @taiga-light  !important;
+          background: @background-primary !important;
         }
       }
+    }
+    .item:hover {
+        color: @white !important;
+        img.content-mask {
+            background-color: @white !important;
+        }
+
     }
   }
 }
@@ -78,8 +98,8 @@ body.platform-win32 {
  */
 .content-container {
   .item.selected {
-    background: @taiga-light !important;
-    color: @white !important;
+    background: lighten(@base02, 20%) !important;
+    color: @background-primary !important;
   }
 }
 
@@ -90,7 +110,7 @@ body.platform-win32 {
   .item.selected {
     background: @taiga-light !important;
     .primary {
-      color: @white !important;
+      color: @background-tertiary !important;
     }
     .secondary {
       color: @taiga-lighter !important;
@@ -112,6 +132,6 @@ body.platform-win32 {
   cursor: pointer;
 
   &.active {
-    background-color: lighten(@taiga-light, 30%) !important;
+    background-color: lighten(@base02, 20%) !important;
   }
 }
