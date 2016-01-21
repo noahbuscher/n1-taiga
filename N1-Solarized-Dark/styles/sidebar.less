@@ -1,11 +1,13 @@
 @import "variables";
+@import "ui-variables";
 
 #account-switcher .primary-item .name {
-  color: @taiga-dark;
+  color: @white;
 }
 
 .account-sidebar-sections {
-  background-color: @white !important;
+  background-color: darken(@base03, 1%) !important;
+  box-shadow: inset -3px 0 3px rgba(0,0,0, .1);
 
   section {
     .item-container {
@@ -17,23 +19,27 @@
 
       .item {
         padding: 0 10px !important;
-        color: @taiga-light !important;
+        color: @base1 !important;
         cursor: pointer !important;
 
         .item-count-box {
           background: transparent !important;
-          color: @taiga-light !important;
-          box-shadow: 0 0.5px 0 @taiga-light, 0 -0.5px 0 @taiga-light, 0.5px 0 0 @taiga-light, -0.5px 0 0 @taiga-light !important;
+          box-shadow: inset -2px 0 3px rgba(0,0,0, .1);
+          color: @base01 !important;
+          box-shadow: 0 0.5px 0 @base01, 0 -0.5px 0 @base01, 0.5px 0 0 @base01, -0.5px 0 0 @base01 !important;
         }
-
+        &:hover {
+            background: fade(@background-tertiary, 40%) !important;
+            border-radius: @base-border-radius;
+        }
         &.selected {
-          background: @taiga-accent !important;
+          background: @background-tertiary !important;
           border-radius: @base-border-radius;
           color: @white !important;
 
           .item-count-box {
             background: transparent !important;
-            color: @white !important;
+            color: @white!important;
             box-shadow: 0 0.5px 0 @white, 0 -0.5px 0 @white, 0.5px 0 0 @white, -0.5px 0 0 @white !important;
           }
 
@@ -44,6 +50,7 @@
           }
         }
       }
+
     }
   }
 }

@@ -1,0 +1,58 @@
+@import "variables";
+
+@accent-primary:         @base01;
+@accent-primary-dark:    @base03;
+//Used for Notification
+@gray-base:    #ffffff;
+
+@background-primary: @base02;
+@background-off-primary: @base02;
+@background-secondary: @base03;
+@background-tertiary: @base04;
+
+@text-color: @base0;
+@text-color-subtle: @base01;
+@text-color-very-subtle: fadeout(@text-color, 40%);
+@text-color-inverse: @base1;
+@text-color-inverse-subtle:       fadeout(@text-color-inverse, 20%);
+@text-color-inverse-very-subtle:  fadeout(@text-color-inverse, 50%);
+@text-color-heading:              #FFF;
+
+@panel-background-color: @base03;
+@toolbar-background-color: @base03;
+
+@btn-default-bg-color: @base02;
+@btn-default-text-color: @background-tertiary;
+@dropdown-default-bg-color: @base03;
+@dropdown-default-text-color: @background-tertiary;
+
+@list-selected-color:   @white;
+@list-bg:               @background-secondary;
+@list-border:           #383838;
+@list-hover-bg:         @background-primary;
+
+@input-bg:              @base02;
+@input-border:          @background-tertiary;
+
+@border-primary-bg:     lighten(@background-primary, 10%);
+@border-secondary-bg:   lighten(@background-secondary, 10%);
+@border-tertiary-bg:    lighten(@background-tertiary, 10%);
+@border-color-divider:  @border-secondary-bg;
+
+@background-gradient: none;
+@toolbar-background-gradient: none;
+@toolbar-background-color: @background-secondary;
+
+.thread-icon:not(.thread-icon-unread):not(.thread-icon-star) {
+  -webkit-filter: invert(100%);
+}
+img.content-dark {
+  -webkit-filter: invert(100%);
+}
+img.content-light {
+  -webkit-filter: invert(100%);
+}
+
+.popover {
+  border: 1px solid @border-primary-bg;
+}
