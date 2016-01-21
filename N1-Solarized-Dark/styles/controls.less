@@ -11,6 +11,12 @@
   border-radius: @base-border-radius !important;
   cursor: pointer !important;
 }
+    .btn-toolbar:hover {
+      background: @background-tertiary !important;
+      img.content-mask {
+          background-color: @background-secondary !important;
+      }
+}
 
 body.platform-win32 {
   .sheet-toolbar-container {
@@ -22,7 +28,7 @@ body.platform-win32 {
 
 .btn.btn-emphasis {
   background-color: @background-tertiary !important;
-  border-color: @taiga-accent !important;
+  border-color: @n-accent !important;
   color: @background-primary !important;
 
   img.content-mask {
@@ -34,7 +40,7 @@ body.platform-win32 {
   .primary-item {
     cursor: pointer !important;
     box-shadow: none !important;
-    background: @background-primary !important;
+    background: @background-secondary !important;
     border: 1px solid @background-tertiary !important;
     border-top-left-radius: @base-border-radius !important;
     border-bottom-left-radius: @base-border-radius !important;
@@ -51,7 +57,7 @@ body.platform-win32 {
   .secondary-picker {
     cursor: pointer !important;
     box-shadow: none !important;
-    background: @background-primary !important;
+    background: @background-secondary !important;
     border: 1px solid @background-tertiary !important;
     border-top-right-radius: @base-border-radius !important;
     border-bottom-right-radius: @base-border-radius !important;
@@ -67,8 +73,8 @@ body.platform-win32 {
   .secondary-items {
     .item  {
       cursor: pointer;
-      color: @taiga-light !important;
-      background: @base02 !important;
+      color: @base01 !important;
+      background: @base03 !important;
       .button-dropdown {
         img {
           background: @background-primary !important;
@@ -80,6 +86,7 @@ body.platform-win32 {
         img.content-mask {
             background-color: @white !important;
         }
+        background: @background-primary !important;
 
     }
   }
@@ -89,7 +96,7 @@ body.platform-win32 {
  * Feedback button
  */
 .btn-feedback {
-  background: @taiga-accent !important;
+  background: @n-accent !important;
   border: none !important;
 }
 
@@ -108,12 +115,12 @@ body.platform-win32 {
  */
 .menu {
   .item.selected {
-    background: @taiga-light !important;
+    background: @background-primary !important;
     .primary {
       color: @background-tertiary !important;
     }
     .secondary {
-      color: @taiga-lighter !important;
+      color: @background-secondary !important;
     }
   }
 }
@@ -132,6 +139,43 @@ body.platform-win32 {
   cursor: pointer;
 
   &.active {
-    background-color: lighten(@base02, 20%) !important;
+    background-color: @background-tertiary !important;
+  }
+}
+
+.preferences-wrap {
+  select {
+    border-color: @background-tertiary !important;
+  }
+  .preferences-sidebar {
+    .item {
+      &.active {
+        background: @background-primary;
+
+        &:not(.has-subitems) {
+          border-right:3px solid @n-accent;
+          .name {
+            color: @white;
+          }
+        }
+
+        .subitem.active {
+          background: @background-primary;
+          border-right:3px solid @n-accent !important;
+          color: @white !important;
+        }
+      }
+    }
+  }
+  .preferences-accounts {
+    .account-name {
+      color: @white !important;
+    }
+    .account-subtext {
+      color: @text-color !important;
+    }
+    .account-details {
+      background-color: @background-secondary !important;
+    }
   }
 }

@@ -6,7 +6,7 @@
     .list-item {
       &.focused:hover .list-column-HoverActions .inner {
         color: @background-primary !important;
-        background-color: @background-tertiary;
+        background-color: @background-tertiary !important;
 
         .action {
           -webkit-filter: none;
@@ -25,6 +25,10 @@
             border: 0 !important;
             background-color: @background-secondary !important;
             color: @base00 !important;
+            &:hover {
+                color: fade(@white, 70%) !important;
+                background-color: fade(@background-tertiary, 30%) !important;
+            }
             &.focused {
               color: @white !important;
               background-color: @background-tertiary !important;

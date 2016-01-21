@@ -28,7 +28,10 @@
           color: @base01 !important;
           box-shadow: 0 0.5px 0 @base01, 0 -0.5px 0 @base01, 0.5px 0 0 @base01, -0.5px 0 0 @base01 !important;
         }
-
+        &:hover {
+            background: fade(@background-tertiary, 40%) !important;
+            border-radius: @base-border-radius;
+        }
         &.selected {
           background: @background-tertiary !important;
           border-radius: @base-border-radius;
@@ -47,6 +50,7 @@
           }
         }
       }
+
     }
   }
 }
