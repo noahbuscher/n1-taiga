@@ -1,1 +1,5 @@
 .DS_Store
+.ui-variables-old.less
+.ui-variables-master.less
+.preferences-specific.less
+.original-preview.png

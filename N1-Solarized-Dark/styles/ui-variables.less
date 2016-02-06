@@ -1,0 +1,75 @@
+/**
+ * Colors
+ */
+@n-accent: #268bd2;
+@white: #fdf6e3;
+
+// Shades 'O Gray
+@base01: #586e75;
+@base00: #657b83;
+@base0: #839496;
+@base1: #93a1a1;
+
+/**
+ * Borders
+ */
+@base-border-radius: 4px;
+
+
+@accent-primary:         @base01;
+@accent-primary-dark:    #002b36;
+@accent-primary-light:   #073642;
+//Used for Notification
+@gray-base:    #ffffff;
+
+@background-primary: @accent-primary-light;
+@background-off-primary: @accent-primary-light;
+@background-secondary: @accent-primary-dark;
+@background-tertiary: #1290af;
+
+@text-color: @base0;
+@text-color-subtle: @base01;
+@text-color-very-subtle: fadeout(@text-color, 40%);
+@text-color-inverse: @base1;
+@text-color-inverse-subtle:       fadeout(@text-color-inverse, 20%);
+@text-color-inverse-very-subtle:  fadeout(@text-color-inverse, 50%);
+@text-color-heading:              #FFF;
+
+@panel-background-color: @accent-primary-dark;
+@toolbar-background-color: @accent-primary-dark;
+
+@btn-default-bg-color: @accent-primary-light;
+@btn-default-text-color: @background-tertiary;
+@dropdown-default-bg-color: @accent-primary-dark;
+@dropdown-default-text-color: @background-tertiary;
+
+@list-selected-color:   @white;
+@list-bg:               @background-secondary;
+@list-border:           #383838;
+@list-hover-bg:         @background-primary;
+
+@input-bg:              @accent-primary-light;
+@input-border:          @background-tertiary;
+
+@border-primary-bg:     lighten(@background-primary, 10%);
+@border-secondary-bg:   lighten(@background-secondary, 10%);
+@border-tertiary-bg:    lighten(@background-tertiary, 10%);
+@border-color-divider:  @border-secondary-bg;
+
+@background-gradient: none;
+@toolbar-background-gradient: none;
+@toolbar-background-color: @background-secondary;
+
+.thread-icon:not(.thread-icon-unread):not(.thread-icon-star) {
+  -webkit-filter: invert(100%);
+}
+img.content-dark {
+  -webkit-filter: invert(100%);
+}
+img.content-light {
+  -webkit-filter: invert(100%);
+}
+
+.popover {
+  border: 1px solid @border-primary-bg;
+}
