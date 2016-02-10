@@ -1,14 +1,18 @@
 @import "variables";
 
+.as-button() {
+  cursor: pointer !important;
+  background: @white !important;
+  box-shadow: 0 0 1px @taiga-light !important;
+  border: 1px solid transparent !important;
+}
+
 /**
  * Buttons
  */
 .btn-toolbar, .token, .actions>.btn, .new-package>.btn, .appearance-mode-switch>.btn {
-  box-shadow: none !important;
-  background: @white !important;
-  border: 1px solid @taiga-light !important;
+  .as-button;
   border-radius: @base-border-radius !important;
-  cursor: pointer !important;
 }
 
 body.platform-win32 {
@@ -31,20 +35,13 @@ body.platform-win32 {
 
 .button-dropdown.bordered {
   .primary-item {
-    cursor: pointer !important;
-    box-shadow: none !important;
-    background: @white !important;
-    border: 1px solid @taiga-light !important;
     border-top-left-radius: @base-border-radius !important;
     border-bottom-left-radius: @base-border-radius !important;
     padding-top: 5px;
   }
 
   .secondary-picker {
-    cursor: pointer !important;
-    box-shadow: none !important;
-    background: @white !important;
-    border: 1px solid @taiga-light !important;
+    .as-button;
     border-top-right-radius: @base-border-radius !important;
     border-bottom-right-radius: @base-border-radius !important;
     margin-left: -1px !important;
