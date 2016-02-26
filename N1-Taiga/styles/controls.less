@@ -11,6 +11,14 @@
   cursor: pointer !important;
 }
 
+.composer-action-bar-content {
+  .btn-toolbar {
+    border: 0 !important;
+    border-radius: 0 !important;
+    background: transparent !important;
+  }
+}
+
 body.platform-win32 {
   .sheet-toolbar-container {
     .btn-toolbar {
@@ -37,7 +45,10 @@ body.platform-win32 {
     border: 1px solid @taiga-light !important;
     border-top-left-radius: @base-border-radius !important;
     border-bottom-left-radius: @base-border-radius !important;
-    padding-top: 5px;
+    img {
+      position: relative;
+      top: -2px;
+    }
   }
 
   .secondary-picker {
