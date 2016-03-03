@@ -1,5 +1,6 @@
 {
   "name": "N1-Taiga",
+  "displayName": "Taiga",
   "theme": "Taiga",
   "version": "0.2.6",
   "description": "A clean, Mailbox-inspired theme for Nylas N1",
